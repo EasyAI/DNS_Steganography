@@ -85,7 +85,7 @@ class DNS_Factory():
         reply_question = self._build_query(domainInfo[0])
 
         ## Reply body.
-        reply_body = self._build_reply_body(rShortName=rShortName, rType=domainInfo[1])
+        reply_body = self._build_reply_body(rShortName=rShortName)
 
         return(reply_header+reply_question+reply_body)
 
@@ -143,7 +143,7 @@ class DNS_Factory():
         return(qbytes)
 
 
-    def _build_reply_body(self, rTTL=0, rType=1, rIPadd='0.0.0.0', rShortName=None):
+    def _build_reply_body(self, rTTL=100, rType=1, rIPadd='0.0.0.0', rShortName=None):
         '''
         Used to build the body for a reply.
         '''
