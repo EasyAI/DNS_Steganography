@@ -12,7 +12,7 @@ This is a script that uses DNS to hide a and send a message between a basic clie
 
 ## Usage
 Client:
-  Run the client on the commandline and use the servers IP address as an extra argument followed by the message you wish to send. e.g. ./server.py 127.0.0.1 'Hello Server!'
+  Run the client on the commandline and use the servers IP address as an extra argument followed by the message you wish to send. e.g. ./client.py 127.0.0.1 'Hello Server!'
  
 Sever:
   Run the server on the commandline and use the binding IP address as an extra argument. e.g. ./server.py 127.0.0.1
